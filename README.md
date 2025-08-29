@@ -16,7 +16,7 @@ It provides a feed-based social experience where users can **sign up, create pos
 ## 🛠 Tech Stack
 - **Flutter Version:** 3.29.3
 - **Dart:** Compatible with Flutter 3.29.3
-- **State Management:** BLoC (flutter_bloc)
+- **State Management:** BLoC-Cubit (flutter_bloc)
 - **Backend Services:**
     - Authentication: **Firebase Authentication (Email/Password)**
     - Database: **Cloud Firestore**
@@ -37,7 +37,7 @@ It provides a feed-based social experience where users can **sign up, create pos
 
 ---
 
-## 📂 Folder Structure
+📂 Folder Structure
 lib/
 │
 ├── model/                     # Data models (Feed, Comment, etc.)
@@ -60,8 +60,6 @@ lib/
 │   └── const_data.dart
 │
 └── main.dart                  # Application entry point
-
----
 
 ## 🏗 Architecture
 

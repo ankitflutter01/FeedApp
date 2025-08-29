@@ -40,31 +40,26 @@ It provides a feed-based social experience where users can **sign up, create pos
 ## 📂 Folder Structure
 lib/
 │
-├── model/ # Data models (Feed, Comment, etc.)
-│ ├── comment_model.dart
-│ ├── feed_model.dart
+├── model/                     # Data models (Feed, Comment, etc.)
+│   ├── comment_model.dart
+│   └── feed_model.dart
 │
-├── network_manager/ # Network-related configurations
+├── screen/                    # Screens organized by feature
+│   ├── feed_create_edit/      # Feed creation & editing
+│   ├── feed_listing/          # Feed listing, comments, like features
+│   ├── home/                  # Home screen
+│   ├── my_feed/               # User-specific feed
+│   ├── profile/               # Profile screen
+│   ├── sign_up/               # Authentication (Sign Up)
+│   └── splash_screen/         # Splash screen
 │
-├── repository/ # Repository layer for data fetching
+├── utils/                     # Constants, colors, common widgets
+│   ├── app_color.dart
+│   ├── app_string.dart
+│   ├── common_widget.dart
+│   └── const_data.dart
 │
-├── screen/ # Screens organized by feature
-│ ├── feed_create_edit/ # Feed creation & editing
-│ ├── feed_listing/ # Feed listing, comments, like features
-│ ├── home/ # Home screen
-│ ├── my_feed/ # User-specific feed
-│ ├── profile/ # Profile screen
-│ ├── sign_up/ # Authentication (Sign Up)
-│ └── splash_screen/ # Splash screen
-│
-├── utils/ # Constants, colors, common widgets
-│ ├── app_color.dart
-│ ├── app_string.dart
-│ ├── common_widget.dart
-│ └── const_data.dart
-│
-└── main.dart # Application entry point
-
+└── main.dart                  # Application entry point
 
 ---
 

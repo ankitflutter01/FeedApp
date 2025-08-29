@@ -47,16 +47,6 @@ class _MainFeedScreenState extends State<MainFeedScreen> {
           },
           builder: (context, state) {
             final cubit = BlocProvider.of<FeedCubit>(context);
-            // return cubit.isLoadingComplete
-            //     ? _buildShimmer()
-            //     : cubit.feeds.isEmpty
-            //     ? _buildEmptyState()
-            //     : RefreshIndicator(
-            //       onRefresh: () async {
-            //         cubit.fetchFeeds();
-            //       },
-            //       child: listViewData(cubit)
-            //     );
 
             if (cubit.isLoadingComplete) {
               return _buildShimmer();
@@ -70,20 +60,6 @@ class _MainFeedScreenState extends State<MainFeedScreen> {
                 onRefresh: () async {
                   cubit.fetchFeeds();
                 },
-                // child: ListView.builder(
-                //   itemCount: feeds.length,
-                //   itemBuilder: (context, index) {
-                //     final feed = feeds[index];
-                //     final isLiked = feed.likes.contains(currentUser!.uid);
-                //
-                //     return _buildFeedItem(
-                //       key: ValueKey(feed.id),
-                //       feed: feed,
-                //       isLiked: isLiked,
-                //       cubit: context.read<FeedCubit>(),
-                //     );
-                //   },
-                // ),
                 child: listViewData(cubit)
               );
             }

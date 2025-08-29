@@ -38,6 +38,7 @@ It provides a feed-based social experience where users can **sign up, create pos
 ---
 
 📂 Folder Structure
+
 lib/
 │
 ├── model/                     # Data models (Feed, Comment, etc.)
